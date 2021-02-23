@@ -1,0 +1,13 @@
+{
+  "name": "tsdemo",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "rentao <912683552@qq.com>",
+  "license": "ISC"
+}
