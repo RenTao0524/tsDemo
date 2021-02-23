@@ -52,3 +52,32 @@ console.log('colorName:', colorName)
 let notSure: any = 4
 notSure = 'maybe a string instead'
 console.log('notSure:', notSure)
+
+// 8. Void
+function warnInfo(message: string): void {
+  console.log(`warn info ${message}`)
+}
+
+warnInfo('error message')
+
+let unusable: void = undefined
+
+// 9. Never
+// todo
+
+// 10. Object
+declare function create(o: object | null): void
+
+create({ prop: 0 })
+create(null)
+
+// create(42); // Error
+// create("string"); // Error
+// create(false); // Error
+// create(undefined); // Error
+
+// 11.类型断言
+let someValue: any = "this is a string";
+let strLength: number = (<string>someValue).length;
+let strLength1: number = (someValue as string).length;
+
